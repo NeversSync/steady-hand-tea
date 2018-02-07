@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Main from './components/Main';
+import Main from './components/Main';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        test
-        {/* <Main /> */}
+      <div className="App" style={{width: '100%'}}>
+        <Main />
       </div>
     );
   }
