@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundImg from '../../assets/img/tetsu-landing-img-tall.jpg';
+import backgroundImg from '../../../public/assets/img/tetsu-landing-img-tall.jpg';
 
 const Wrapper = styled.div`
   display: grid;
