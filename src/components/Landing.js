@@ -1,5 +1,5 @@
 import React from 'react';
-import { Background, Wrapper } from './styles/Landing.style';
+import { Background, Wrapper } from '../styles/landing-style';
 
 function Landing() {
   return (
