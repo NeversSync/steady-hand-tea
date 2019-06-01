@@ -5,7 +5,6 @@ import Landing from '../components/Landing';
 
 const IndexPage = () => (
   <Layout>
-    <p>test</p>
     <Landing/>
   </Layout>
 );

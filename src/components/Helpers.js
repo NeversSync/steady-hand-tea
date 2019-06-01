@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'gatsby-link';
 // import Scrollchor from 'react-scrollchor';
 
 const Wrapper = styled.div`
@@ -9,11 +10,10 @@ const Wrapper = styled.div`
 `;
 
 const Copy = styled.p`
-  font-family: 'Rubik', sans-serif;
   font-size: .6em;
   line-height: 22px;
   letter-spacing: 1.5px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 
   @media (min-width: 900px) {
@@ -24,9 +24,18 @@ const Copy = styled.p`
 `;
 
 const Card = styled.div`
+  display: grid;
   box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
-  /* background: white; */
+  background: hsla(23, 17%, 19%, 0.6);
+  border: solid 1px white;
+  width: 85vw;
+  padding: 2vw;
   border-radius: 4px;
+  text-align: center;
+
+  @media(min-width: 900px) {
+    width: 60vw;
+  }
   `;
 
 const ImageWrapper = styled(Card)`
@@ -41,9 +50,13 @@ const Image = styled.img`
 
 const Title = styled.h1`
   display: grid;
+  justify-self: center;
+  margin: .5em;
+  margin-bottom: 1em;
   font-size: 1em;
   letter-spacing: 3px;
-  font-family: 'Sedgwick Ave Display', cursive;
+  color: white;
+  /* font-family: 'rubik', sans-serif; */
 
   @media (min-width: 1100px) {
     font-size: 1.4em;
@@ -51,10 +64,12 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h3`
-  font-family: 'rubik', sans-serif;
+  /* font-family: 'rubik', sans-serif; */
   font-size: .9em;
   letter-spacing: 4px;
+  color: white;
   font-weight: 300;
+  line-height: 1.2em;
 
   @media (min-width: 1100px) {
     font-size: 1em;
@@ -65,9 +80,10 @@ const CTAButtonText = styled.p`
   color: white;
 `;
 
-const CTAButton = styled.button`
+const CTAButton = styled.a`
+  justify-self: center;
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -141,9 +157,9 @@ const SVGArrowRight = () => (
   </CTAButton>
 );
 
-const HomeButton = () => (
-  <CTAButton className="arrow">
-    <CTAButtonText>HOME</CTAButtonText>
+const EventButton = () => (
+  <CTAButton href="https://www.facebook.com/events/2454962074723435/" target="_blank" className="arrow">
+    <CTAButtonText>LEARN MORE</CTAButtonText>
     <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
@@ -164,4 +180,4 @@ const HomeButton = () => (
 //   </Scrollchor>
 // );
 
-export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, Testimonial, SVGArrowRight, HomeButton, Image, ImageWrapper, Spacer };
+export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, CTAButtonText, Testimonial, SVGArrowRight, EventButton, Image, ImageWrapper, Spacer };

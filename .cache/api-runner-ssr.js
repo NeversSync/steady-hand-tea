@@ -1,6 +1,12 @@
 var plugins = [{
       plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/steady-hand-tea/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/steady-hand-tea/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-127500009-1","head":true},
+    },{
+      plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/steady-hand-tea/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

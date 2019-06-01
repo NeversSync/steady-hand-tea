@@ -3,6 +3,20 @@
 /* font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Rubik', sans-serif; */
 
+.link {
+  color: hsla(190, 80%, 62%, 1.00);
+  padding: 5px;
+  font-weight: 400;
+  /* border: 1px solid white; */
+  transition: all 200ms ease-in-out;
+}
+
+.link:hover {
+  color: hsla(190, 90%, 42%, 1.00);
+  transform: scale(1.2);
+}
+
+
 article,
 aside,
 details,
@@ -175,7 +189,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  font-family: 'rubik', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

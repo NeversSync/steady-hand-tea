@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import 'reset-css';
 import '../styles/boss.css';
 import styled from 'styled-components';
-// import 'typeface-fira-sans';
+import 'typeface-fira-sans';
 // import { UpArrow } from './Helpers';
 
 const Content = styled.div`
