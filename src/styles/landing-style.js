@@ -21,9 +21,18 @@ const Background = styled.div`
 
 const Social = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
+  width: 80%;
+  justify-self: center;
   justify-items: space-around;
+  border: 1px solid rgba(255,255,255, .4);
+  border-radius: 10px;
+
+  @media(min-width: 900px) {
+
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+  }
 `;
 
 export { Background, Wrapper, Social };
