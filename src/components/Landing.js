@@ -1,6 +1,11 @@
-import React from "react";
-import Link from "gatsby-link";
-import { Background, Wrapper, Social } from "../styles/landing-style";
+import React from 'react';
+import {
+  Background,
+  Wrapper,
+  Social,
+  SocialWrapper,
+  SocialTwo
+} from '../styles/landing-style';
 import {
   Card,
   Title,
@@ -8,8 +13,9 @@ import {
   CTAButton,
   CTAButtonText,
   EventButton
-} from "./Helpers";
+} from './Helpers';
 
+// TODO: make mobile responsive social thing
 function Landing() {
   return (
     <Wrapper>
@@ -27,8 +33,8 @@ function Landing() {
             <br />
             <br />
           </SubTitle>
-          <Social>
-            <div style={{display: 'grid', gridColumn: '2 / 3', gridRow: '1 / 2',}}>
+          <SocialWrapper>
+            <Social>
               <a
                 class="link"
                 href="https://www.instagram.com/steadyhandtea/"
@@ -36,7 +42,7 @@ function Landing() {
               >
                 Instagram
               </a>
-              <br/>
+              <br />
               <a
                 class="link"
                 href="https://www.instagram.com/steadyhandtea/"
@@ -44,23 +50,13 @@ function Landing() {
               >
                 Facebook
               </a>
-            </div>
-            <SubTitle
-              style={{
-                display: "grid",
-                gridColumn: "3 / 4",
-                gridRow: "1 / 2",
-                justifySelf: "center",
-                border: "1px solid rgba(255,255,255, .7",
-                boxShadow:
-                  "0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07)",
-                padding: "1em",
-                margin: "1em"
-              }}
-            >
-              Tea and Japanese<br /> Sweets Event<EventButton />
-            </SubTitle>
-          </Social>
+            </Social>
+            <SocialTwo>
+              <SubTitle style={{display: 'grid'}}>Tea and Japanese<br /> Sweets Event
+                <EventButton />
+              </SubTitle>
+            </SocialTwo>
+          </SocialWrapper>
         </Card>
       </Background>
     </Wrapper>

@@ -83,7 +83,7 @@ const CTAButtonText = styled.p`
 const CTAButton = styled.a`
   justify-self: center;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 1em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -111,8 +111,8 @@ const CTAButton = styled.a`
   }
 
   @media(max-width: 900px) {
-    margin: 0;
-    font-size: 16px;
+    /* margin: 0; */
+    /* font-size: 16px; */
     &:hover {
       background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
       box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
