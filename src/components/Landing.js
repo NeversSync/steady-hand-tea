@@ -14,6 +14,7 @@ import {
   CTAButtonText,
   EventButton
 } from './Helpers';
+import { Link } from 'gatsby';
 
 // TODO: make mobile responsive social thing
 function Landing() {
@@ -27,6 +28,7 @@ function Landing() {
             <br />
             Tea related posts, photos, articles, and events. Artisan tea
             wholesale and distribution. Contact for price list.<br />
+            <Link to='Pricelist'>price list</Link>
             <br />
             Regular tea arts classes and events in Portland. Check events tab
             for more information.
