@@ -6,18 +6,18 @@ import {
 import {
   Card,
   Title,
-  Image, ImageWrapper
+  Image,
+  ImageWrapper
 } from '../components/Helpers';
 
+// TODO: MAKE PRICELIST AS PAGE
 function Pricelist() {
   return (
-    <Wrapper>
-      <Card>
+    <Wrapper style={{gridColumn: '1 / -1'}}>
+      <Card style={{gridColumn: '1 / -1', width: '100vw', justifyContent: 'center'}}>
         <Title>Steady Hand Tea</Title>
-        <ImageWrapper>
-          <Image height='auto' alt='blah' width='100%' src='../../public/assets/img/retail-pricelist.png'/>
-        </ImageWrapper>
-        {/* <a href='../../public/assets/steady-hand-tea-retail-pricelist-2019.pdf' target='_blank'>price list</a> */}
+
+        <a href='https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing' target='_blank'>price list</a>
         {/* <iframe
           title="file"
           style={{ width: '100%', height: '100%' }}

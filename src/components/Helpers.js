@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from 'gatsby-link';
-// import Scrollchor from 'react-scrollchor';
 
 const Wrapper = styled.div`
   display: grid;
@@ -40,6 +38,7 @@ const Card = styled.div`
 
 const ImageWrapper = styled(Card)`
   display: grid;
+  grid-column: 1 / -1;
 `;
 
 const Image = styled.img`

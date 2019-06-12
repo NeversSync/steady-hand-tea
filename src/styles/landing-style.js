@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 110vh;
+  grid-template-rows: 117vh;
   background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1559350545/steady-hand-tea/IMG_7239.jpg');
   background-size: cover;
   background-repeat: repeat-y;

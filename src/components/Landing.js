@@ -16,7 +16,7 @@ import {
 } from './Helpers';
 import { Link } from 'gatsby';
 
-// TODO: make mobile responsive social thing
+// TODO: Add newsletter signup
 function Landing() {
   return (
     <Wrapper>
@@ -27,11 +27,10 @@ function Landing() {
             Lending a steady hand through tea and tea culture.<br />
             <br />
             Tea related posts, photos, articles, and events. Artisan tea
-            wholesale and distribution. Contact for price list.<br />
-            <Link to='Pricelist'>price list</Link>
+            wholesale and distribution. <br/><br/>Interested in wholesaling or retailing tea from us?<br /> Click <a class="link" href='https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing' target='_blank'>here</a> for our retail price list<br /> or<br /><a class="link" href="mailto:steadyhandtea@gmail.com" target="_blank"> contact us</a>for more information.<br />
+
             <br />
-            Regular tea arts classes and events in Portland. Check events tab
-            for more information.
+            Regular tea arts classes and events in Portland. Connect on social media below to see what's brewing.
             <br />
             <br />
           </SubTitle>
