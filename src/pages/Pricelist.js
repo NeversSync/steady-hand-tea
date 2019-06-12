@@ -15,7 +15,7 @@ function Pricelist() {
       <Card>
         <Title>Steady Hand Tea</Title>
         <ImageWrapper>
-          <Image height='auto' alt='blah' width='100%' src='../retail-pricelist.png'/>
+          <Image height='auto' alt='blah' width='100%' src='../../public/assets/img/retail-pricelist.png'/>
         </ImageWrapper>
         {/* <a href='../../public/assets/steady-hand-tea-retail-pricelist-2019.pdf' target='_blank'>price list</a> */}
         {/* <iframe
