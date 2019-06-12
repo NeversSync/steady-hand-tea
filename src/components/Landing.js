@@ -21,7 +21,7 @@ function Landing() {
   return (
     <Wrapper>
       <Background>
-        <Card>
+        <Card >
           <Title>Steady Hand Tea</Title>
           <SubTitle>
             Lending a steady hand through tea and tea culture.<br />

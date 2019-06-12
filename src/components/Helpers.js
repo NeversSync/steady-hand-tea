@@ -64,14 +64,14 @@ const Title = styled.h1`
 
 const SubTitle = styled.h3`
   /* font-family: 'rubik', sans-serif; */
-  font-size: .9em;
+  font-size: .7em;
   letter-spacing: 4px;
   color: white;
   font-weight: 300;
   line-height: 1.2em;
 
   @media (min-width: 1100px) {
-    font-size: 1em;
+    font-size: .8em;
   }
 `;
 

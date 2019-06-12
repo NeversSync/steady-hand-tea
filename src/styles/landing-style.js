@@ -2,17 +2,16 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 117vh;
+  grid-template-columns: 100vw;
   background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1559350545/steady-hand-tea/IMG_7239.jpg');
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat-y;
   background-position: center center;
-  padding-top: 10vh;
 
   @media (min-width: 900px) {
     grid-template-rows: 100vh;
-    padding-top: 0;
+    /* padding-top: 0vh; */
+    background-size: cover;
   }
 `;
 
@@ -20,9 +19,16 @@ const Background = styled.div`
   background-color: hsla(23, 8%, 19%, 0.4);
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100vh;
   justify-items: center;
   align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+  @media (min-width: 900px) {
+    grid-template-rows: 100vh;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+  }
 `;
 
 const SocialWrapper = styled.div`
@@ -30,7 +36,7 @@ const SocialWrapper = styled.div`
   grid-template-columns: auto;
   align-items: center;
   justify-content: center;
-  padding: .5em;
+  padding: 0.5em;
   width: 85%;
   justify-self: center;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -74,7 +80,7 @@ const SocialTwo = styled(Social)`
   justify-items: center;
   /* border: 1px solid rgba(255, 255, 255, 0.7); */
   box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
-  margin-top: .5em;
+  margin-top: 0.5em;
 
   @media (min-width: 900px) {
     /* grid-template-columns: 1fr 2fr 2fr 1fr; */
