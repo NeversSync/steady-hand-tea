@@ -77,7 +77,7 @@ function Landing() {
               </SubTitle>
             </SocialTwo>
           </SocialWrapper>
-          <div id="instafeed" />
+          {/* <div id="instafeed" /> */}
         </Card>
       </Background>
     </Wrapper>
