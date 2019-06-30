@@ -19,8 +19,6 @@ import { Link } from 'gatsby';
 // TODO: Add newsletter signup
 function Landing() {
   return (
-    //     <!-- Fastory widget: Use data-offset parameter to change
-    // the vertical position of the widget -->
     <Wrapper>
       <Background>
         <Card>
@@ -66,7 +64,7 @@ function Landing() {
               <br />
               <a
                 class="link"
-                href="https://www.instagram.com/steadyhandtea/"
+                href="https://www.facebook.com/steadyhandtea/"
                 target="_blank"
               >
                 Facebook
