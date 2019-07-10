@@ -25,6 +25,7 @@ const Card = styled.div`
   display: grid;
   box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
   background: hsla(23, 17%, 19%, 0.6);
+  background: hsla(23, 10%, 39%, 0.7);
   border: solid 1px white;
   width: 85vw;
   padding: 2vw;
@@ -55,6 +56,7 @@ const Title = styled.h1`
   font-size: 1em;
   letter-spacing: 3px;
   color: white;
+  /* color: black; */
   /* font-family: 'rubik', sans-serif; */
 
   @media (min-width: 1100px) {
@@ -157,7 +159,7 @@ const SVGArrowRight = () => (
 );
 
 const EventButton = () => (
-  <CTAButton href="https://www.facebook.com/events/2454962074723435/" target="_blank" className="arrow">
+  <CTAButton href="https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing" target="_blank" className="arrow">
     <CTAButtonText>LEARN MORE</CTAButtonText>
     <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">

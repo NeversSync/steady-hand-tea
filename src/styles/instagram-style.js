@@ -17,21 +17,14 @@ const InstaCard = styled.div`
 
 const InstaFeedContainer = styled(InstaCard)`
   display: grid;
-  /* padding: 5em; */
-  padding-bottom: .5em;
-  /* box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2); */
-  /* background: radial-gradient(hsla(240, 20%, 40%, .9), hsla(240, 53%, 15%, .8)); */
+  padding-bottom: 10vh;
   background: white;
-  /* grid-column: 2 / 6; */
-  /* grid-row: 2 / 3; */
   grid-column: 1 / -1;
   width: 85%;
   justify-self: center;
 
   @media (min-width: 1200px) {
-    /* margin-top: 1.5em; */
-    padding: 0 10vw 0 10vw;
-    padding-bottom: 1.5em;
+    padding: 10vh 10vw 15vh 10vw;
     grid-column: 1 / -1;
     width: 100%;
     justify-self: center;
@@ -60,7 +53,6 @@ const InstaFeedImagesWrapper = styled(InstaCard)`
 
 const InstaImageWrapper = styled(InstaCard)`
   display: grid;
-  /* margin: .3em; */
   transition: all 200ms ease-in-out;
   background-color: white;
 
@@ -73,22 +65,21 @@ const InstaImageWrapper = styled(InstaCard)`
 
     :hover {
       /* box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1), 0 3px 8px rgba(255, 255, 255, 0.05); */
-      box-shadow: 0 5px 15px hsla(190, 90%, 42%, .4), 0 3px 8px hsla(190, 90%, 42%, .4);
+      box-shadow: 0 5px 15px hsla(32, 70%, 60%, .4), 0 3px 8px hsla(32, 70%, 60%, .4);
     }
   }
 `;
 
-const SocialIcon = styled.a`
+const IgSocialIcon = styled.a`
   display: grid;
   justify-content: center;
   align-items: center;
   padding: 0px 10px;
   color: black;
   font-size: 2em;
-
 `;
 
 
-export { InstaFeedImagesWrapper, InstaFeedContainer, InstaImageWrapper, InstaTitleWrapper, SocialIcon };
+export { InstaFeedImagesWrapper, InstaFeedContainer, InstaImageWrapper, InstaTitleWrapper, IgSocialIcon };
 
 

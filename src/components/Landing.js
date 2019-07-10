@@ -4,7 +4,8 @@ import {
   Wrapper,
   Social,
   SocialWrapper,
-  SocialTwo
+  SocialTwo,
+  LandingSocialIcon
 } from '../styles/landing-style';
 import {
   Card,
@@ -14,7 +15,8 @@ import {
   CTAButtonText,
   EventButton
 } from './Helpers';
-import { Link } from 'gatsby';
+import { FaInstagram } from 'react-icons/fa';
+import { TiSocialFacebookCircular } from 'react-icons/ti';
 
 // TODO: Add newsletter signup
 function Landing() {
@@ -24,28 +26,34 @@ function Landing() {
         <Card>
           <Title>Steady Hand Tea</Title>
           <SubTitle>
-            Lending a steady hand through tea and tea culture.<br />
+            Lending a steady hand through tea and tea culture.
             <br />
-            Tea related posts, photos, articles, and events. Artisan tea
-            wholesale and distribution. <br />
-            <br />Interested in wholesaling or retailing tea from us?<br />{' '}
-            Click{' '}
+            <br />
+            Tea related posts, photos, articles, and events. <br />
+            Artisan tea wholesale and distribution. <br />
+            <br />
+            Interested in wholesaling or retailing tea from us?
+            <br /> Click{' '}
             <a
-              class="link"
-              href="https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing"
-              target="_blank"
+              className='link'
+              href='https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing'
+              target='_blank'
             >
               here
-            </a>{' '}
-            for our retail price list<br /> or<br />
+            </a>
+            for our retail price list
+            <br /> or
+            <br />
             <a
-              class="link"
-              href="mailto:steadyhandtea@gmail.com"
-              target="_blank"
+              className='link'
+              href='mailto:steadyhandtea@gmail.com'
+              target='_blank'
             >
-              {' '}
               contact us
-            </a>for more information.<br />
+              <br />
+            </a>
+            for more information.
+            <br />
             <br />
             Regular tea arts classes and events in Portland. Connect on social
             media below to see what's brewing.
@@ -54,30 +62,47 @@ function Landing() {
           </SubTitle>
           <SocialWrapper>
             <Social>
-              <a
-                class="link"
+              <LandingSocialIcon
+                href='https://www.instagram.com/steadyhandtea/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='link'
+                style={{ width: 'fit-content' }}
+              >
+                <FaInstagram />
+              </LandingSocialIcon>
+              {/* <a
+                className="link"
                 href="https://www.instagram.com/steadyhandtea/"
                 target="_blank"
-              >
+                >
                 Instagram
-              </a>
-              <br />
+              </a> */}
+              {/* <br />
               <a
-                class="link"
-                href="https://www.facebook.com/steadyhandtea/"
-                target="_blank"
+              className="link"
+              href="https://www.facebook.com/steadyhandtea/"
+              target="_blank"
               >
-                Facebook
-              </a>
+              Facebook
+            </a> */}
             </Social>
             <SocialTwo>
-              <SubTitle style={{ display: 'grid' }}>
-                Tea and Japanese<br /> Sweets Event
+              <LandingSocialIcon
+                href='https://www.facebook.com/steadyhandtea/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='link'
+                style={{ width: 'fit-content', fontSize: '2.3em' }}
+              >
+                <TiSocialFacebookCircular />
+              </LandingSocialIcon>
+              {/* <SubTitle style={{ display: 'grid' }}>
+                Price List
                 <EventButton />
-              </SubTitle>
+              </SubTitle> */}
             </SocialTwo>
           </SocialWrapper>
-          {/* <div id="instafeed" /> */}
         </Card>
       </Background>
     </Wrapper>

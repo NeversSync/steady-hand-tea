@@ -6,7 +6,7 @@ import Instagram from '../components/Instagram';
 const IndexPage = () => (
   <Layout>
     <Landing/>
-    {/* <Instagram/> */}
+    <Instagram/>
   </Layout>
 );
 
