@@ -55,8 +55,8 @@ function Landing() {
             for more information.
             <br />
             <br />
-            Regular tea arts classes and events in Portland. Connect on social
-            media below to see what's brewing.
+            Regular tea arts classes and events in Portland. <br />
+            Connect on social media below to see what's brewing.
             <br />
             <br />
           </SubTitle>
