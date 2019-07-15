@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 `;
 
 const Copy = styled.p`
-  font-size: .6em;
+  font-size: .8em;
   line-height: 22px;
   letter-spacing: 1.5px;
   font-weight: 400;
@@ -16,7 +16,7 @@ const Copy = styled.p`
 
   @media (min-width: 900px) {
     letter-spacing: 1.75px;
-    font-size: .8em;
+    font-size: .9em;
     line-height: 26px;
   }
 `;
@@ -24,7 +24,7 @@ const Copy = styled.p`
 const Card = styled.div`
   display: grid;
   box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
-  background: hsla(23, 17%, 19%, 0.6);
+  /* background: hsla(23, 17%, 19%, 0.6); */
   background: hsla(23, 10%, 39%, 0.7);
   border: solid 1px white;
   width: 85vw;
@@ -65,14 +65,14 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h3`
-  font-size: .7em;
+  font-size: .8em;
   letter-spacing: 4px;
   color: white;
   font-weight: 300;
   line-height: 1.2em;
 
   @media (min-width: 1100px) {
-    font-size: .8em;
+    font-size: .9em;
   }
 `;
 

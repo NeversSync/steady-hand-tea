@@ -9,22 +9,18 @@ const InstaCard = styled.div`
   /* padding: 2vw; */
   border-radius: 4px;
   text-align: center;
-
-  @media(min-width: 900px) {
-    /* width: 60vw; */
-  }
   `;
 
 const InstaFeedContainer = styled(InstaCard)`
   display: grid;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   background: white;
   grid-column: 1 / -1;
   width: 85%;
   justify-self: center;
 
   @media (min-width: 1200px) {
-    padding: 10vh 10vw 15vh 10vw;
+    padding: 10vh 10vw 5vh 10vw;
     grid-column: 1 / -1;
     width: 100%;
     justify-self: center;
