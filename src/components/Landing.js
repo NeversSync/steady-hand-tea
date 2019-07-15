@@ -71,21 +71,6 @@ function Landing() {
               >
                 <FaInstagram />
               </LandingSocialIcon>
-              {/* <a
-                className="link"
-                href="https://www.instagram.com/steadyhandtea/"
-                target="_blank"
-                >
-                Instagram
-              </a> */}
-              {/* <br />
-              <a
-              className="link"
-              href="https://www.facebook.com/steadyhandtea/"
-              target="_blank"
-              >
-              Facebook
-            </a> */}
             </Social>
             <SocialTwo>
               <LandingSocialIcon
@@ -97,10 +82,6 @@ function Landing() {
               >
                 <TiSocialFacebookCircular />
               </LandingSocialIcon>
-              {/* <SubTitle style={{ display: 'grid' }}>
-                Price List
-                <EventButton />
-              </SubTitle> */}
             </SocialTwo>
           </SocialWrapper>
         </Card>
