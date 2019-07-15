@@ -28,7 +28,7 @@
     "reset-css": "^4.0.1",
     "serve": "^11.0.2",
     "styled-components": "^4.3.2",
-    "typeface-fira-sans": "0.0.54"
+    "typeface-stylish": "0.0.65"
   },
   "keywords": [
     "gatsby"

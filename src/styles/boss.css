@@ -1,7 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500|Sedgwick+Ave+Display'); */
-
-/* font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Rubik', sans-serif; */
+@font-face {
+  font-family: 'goatskin_brush_personal_useRg';
+  src: url('./fonts/goatskinbrush_personaluse-webfont.woff2') format('woff2'),
+       url('./fonts/goatskinbrush_personaluse-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .link {
   color: hsla(190, 80%, 62%, 1.00);

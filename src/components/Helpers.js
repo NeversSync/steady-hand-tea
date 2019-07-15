@@ -49,23 +49,22 @@ const Image = styled.img`
 `;
 
 const Title = styled.h1`
+  font-family: 'goatskin_brush_personal_useRg';
+  /* font-family: stylish, sans-serif; */
   display: grid;
   justify-self: center;
   margin: .5em;
   margin-bottom: 1em;
-  font-size: 1em;
+  font-size: 2em;
   letter-spacing: 3px;
   color: white;
-  /* color: black; */
-  /* font-family: 'rubik', sans-serif; */
 
   @media (min-width: 1100px) {
-    font-size: 1.4em;
+    font-size: 2.5em;
   }
 `;
 
 const SubTitle = styled.h3`
-  /* font-family: 'rubik', sans-serif; */
   font-size: .7em;
   letter-spacing: 4px;
   color: white;

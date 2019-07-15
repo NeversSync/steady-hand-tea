@@ -4,10 +4,11 @@ import Helmet from 'react-helmet';
 import 'reset-css';
 import '../styles/boss.css';
 import styled from 'styled-components';
-import 'typeface-fira-sans';
+import 'typeface-stylish';
+
 
 const Content = styled.div`
-  font-family: fira sans, sans-serif;
+  font-family: stylish, sans-serif;
   font-weight: 400;
   display: grid;
   grid-template-columns: 1fr;
