@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import {
   Background,
   Wrapper,
@@ -17,6 +18,7 @@ import {
 } from './Helpers';
 import { FaInstagram } from 'react-icons/fa';
 import { TiSocialFacebookCircular } from 'react-icons/ti';
+// import priceList from '../../public/assets/img/';
 
 // TODO: Add newsletter signup
 function Landing() {
@@ -34,20 +36,25 @@ function Landing() {
             <br />
             Interested in wholesaling or retailing tea from us?
             <br /> Click{' '}
-            <a
+            {/* <a
               className='link'
               href='https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing'
+              // href={priceList}
               target='_blank'
-            >
+            > */}
+            <Link to='/pricelist'>
               here
-            </a>
+            </Link>
+            {/* </a> */}
             for our retail price list
             <br /> or
             <br />
             <a
+              // className='link'
+              // href='mailto:steadyhandtea@gmail.com'
+              // target='_blank'
               className='link'
-              href='mailto:steadyhandtea@gmail.com'
-              target='_blank'
+              href='#contact'
             >
               contact us
               <br />

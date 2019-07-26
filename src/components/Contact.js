@@ -1,4 +1,5 @@
 import React from 'react';
+import { UpArrow } from './Helpers';
 import {
   ContactWrapper,
   ContactForm,
@@ -12,7 +13,7 @@ import {
 } from '../styles/Contact-styles';
 
 const Contact = () => (
-  <ContactWrapper>
+  <ContactWrapper id="contact">
     <ContactTitle>Contact</ContactTitle>
     <ContactCard>
       <ContactForm
@@ -37,6 +38,7 @@ const Contact = () => (
         </SubmitButton>
       </ContactForm>
     </ContactCard>
+    <UpArrow />
   </ContactWrapper>
 );
 

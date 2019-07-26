@@ -243,7 +243,9 @@ ul {
 
 .up-button {
   display: flex;
-  margin: 30px auto 22px auto;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  margin: 4vw 0 0 0;
   height: 50px;
   width: 50px;
   justify-content: center;
