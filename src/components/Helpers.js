@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Scrollchor from 'react-scrollchor';
+import { Link } from 'gatsby';
 
 const Wrapper = styled.div`
   display: grid;
@@ -24,10 +24,10 @@ const Copy = styled.p`
 
 const Card = styled.div`
   display: grid;
-  box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 5px 15px rgba(50, 50, 93, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
   /* background: hsla(23, 17%, 19%, 0.6); */
   background: hsla(23, 10%, 39%, 0.7);
-  border: solid 1px white;
+  /* border: solid 1px white; */
   width: 85vw;
   padding: 2vw;
   border-radius: 4px;
@@ -121,6 +121,54 @@ const CTAButton = styled.a`
   }
 `;
 
+const PrimaryButton = styled(Link)`
+  display: grid;
+  /* grid-column: 1 / -1; */
+  /* grid-row: 3 / 4; */
+  margin: 1em;
+  font-size: 16px;
+  width: 8em;
+  height: 55px;
+  justify-self: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(hsla(187, 65%, 55%, 1), hsla(187, 65%, 40%, 1));
+  border: none;
+  border-radius: 7px;
+  border-bottom: 3px solid hsla(187, 65%, 30%, 0.7);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+  letter-spacing: 1.8px;
+
+  &:hover {
+    &:hover {
+      background: linear-gradient(
+        hsla(187, 65%, 45%, 1),
+        hsla(187, 65%, 35%, 1)
+      );
+      box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &:active {
+    background: linear-gradient(hsla(187, 65%, 45%, 1), hsla(187, 65%, 35%, 1));
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+    border-bottom: none;
+    box-shadow: none;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 20px;
+    &:hover {
+      background: linear-gradient(
+        hsla(187, 65%, 58%, 1),
+        hsla(187, 65%, 40%, 1)
+      );
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+`;
+
 
 const Spacer = styled.div`
   grid-column: 1 / -1;
@@ -181,4 +229,4 @@ const UpArrow = () => (
   </a>
 );
 
-export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, CTAButtonText, Testimonial, SVGArrowRight, EventButton, Image, ImageWrapper, Spacer, UpArrow };
+export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, CTAButtonText, Testimonial, SVGArrowRight, EventButton, Image, ImageWrapper, Spacer, UpArrow, PrimaryButton };

@@ -35,24 +35,14 @@ function Landing() {
             Artisan tea wholesale and distribution. <br />
             <br />
             Interested in wholesaling or retailing tea from us?
-            <br /> Click{' '}
-            {/* <a
-              className='link'
-              href='https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing'
-              // href={priceList}
-              target='_blank'
-            > */}
-            <Link to='/pricelist'>
-              here
+            <br /> Click
+            <Link className='link' to='/pricelist'>
+            here
             </Link>
-            {/* </a> */}
             for our retail price list
             <br /> or
             <br />
             <a
-              // className='link'
-              // href='mailto:steadyhandtea@gmail.com'
-              // target='_blank'
               className='link'
               href='#contact'
             >
@@ -62,10 +52,15 @@ function Landing() {
             for more information.
             <br />
             <br />
-            Regular tea arts classes and events in Portland. <br />
+            Regular tea arts classes and events in Portland.
+            <br />
+            <a className='link' href='https://www.airbnb.com/experiences/966234' target='_blank'>Book an AirBnb Experience with us</a>
+            <br />
+            <br />
             Connect on social media below to see what's brewing.
             <br />
             <br />
+
           </SubTitle>
           <SocialWrapper>
             <Social>
