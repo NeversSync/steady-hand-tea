@@ -24,10 +24,9 @@ const Copy = styled.p`
 
 const Card = styled.div`
   display: grid;
-  box-shadow: 0 5px 15px rgba(50, 50, 93, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.7) ;
   /* background: hsla(23, 17%, 19%, 0.6); */
   background: hsla(23, 10%, 39%, 0.7);
-  /* border: solid 1px white; */
   width: 85vw;
   padding: 2vw;
   border-radius: 4px;
@@ -90,7 +89,7 @@ const CTAButton = styled.a`
   align-items: center;
   width: 200px;
   height: 55px;
-  background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+  background: linear-gradient(to left, hsla(348, 86%, 59%, .8), hsla(39, 100%, 63%, 0.8));
   border: none;
   border-radius: 7px;
   border-bottom: 3px solid hsla(348, 2%, 10%, .5);
@@ -100,11 +99,11 @@ const CTAButton = styled.a`
   cursor: pointer;
 
   &:hover {
-    background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
+    background: linear-gradient(to left, hsla(348, 96%, 69%, .8), hsla(39, 100%, 63%, 0.8));
     box-shadow: 0 4px 4px rgba(0,0,0,.25);
   }
   &:active {
-    background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
+    background: linear-gradient(to left, hsla(348, 86%, 49%, .8), hsla(39, 90%, 43%, 0.8));
     -webkit-transform: translate(0px, 2px);
     transform: translate(0px, 2px);
     border-bottom: none;
@@ -115,7 +114,7 @@ const CTAButton = styled.a`
     /* margin: 0; */
     /* font-size: 16px; */
     &:hover {
-      background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+      background: linear-gradient(to left, hsla(348, 86%, 59%, .8), hsla(39, 100%, 63%, 0.8));
       box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
     }
   }
@@ -206,9 +205,21 @@ const SVGArrowRight = () => (
   </CTAButton>
 );
 
-const EventButton = () => (
-  <CTAButton href="https://docs.google.com/spreadsheets/d/1833mdAkcj5nNxnhVaKtVrwqkMHAf3bdwRE4NeYMCZGM/edit?usp=sharing" target="_blank" className="arrow">
-    <CTAButtonText>LEARN MORE</CTAButtonText>
+const RetailButton = () => (
+  <CTAButton to='/pricelist' className="arrow">
+    <CTAButtonText>PRICE LIST</CTAButtonText>
+    <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
+      <g id="Layer_2" data-name="Layer 2">
+        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+      </g>
+    </svg>
+  </CTAButton>
+);
+
+const ContactButton = () => (
+  <CTAButton href='#contact' className="arrow">
+    <CTAButtonText>CONTACT US</CTAButtonText>
     <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
@@ -229,4 +240,4 @@ const UpArrow = () => (
   </a>
 );
 
-export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, CTAButtonText, Testimonial, SVGArrowRight, EventButton, Image, ImageWrapper, Spacer, UpArrow, PrimaryButton };
+export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, CTAButtonText, Testimonial, SVGArrowRight, RetailButton, Image, ImageWrapper, Spacer, UpArrow, PrimaryButton, ContactButton };
