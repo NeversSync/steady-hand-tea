@@ -13,27 +13,22 @@ import Image from 'gatsby-image';
 const Instagram = () => (
   <StaticQuery
     query={graphql`
-      query myQuery {
-        allInstagramContent {
-          edges {
-            node {
-              localImage {
-                childImageSharp {
-                  fluid(maxHeight: 500, maxWidth: 500, quality: 90) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
-              }
-              images {
-                standard_resolution {
-                  url
+    query myQuery {
+      allInstaNode {
+        edges {
+          node {
+            localFile {
+              childImageSharp {
+                fluid(maxHeight: 500, maxWidth: 500, quality: 90) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
           }
         }
       }
-    `}
+    }
+`}
     render={data => (
       <InstaFeedContainer>
         <InstaTitleWrapper>
@@ -51,8 +46,8 @@ const Instagram = () => (
           </Title>
         </InstaTitleWrapper>
         <InstaFeedImagesWrapper>
-          {data.allInstagramContent.edges.slice(0, 12).map((item, i) => {
-            return item.node.localImage ? (
+          {data.allInstaNode.edges.slice(0, 12).map((item, i) => {
+            return item.node.localFile ? (
               <InstaImageWrapper key={i}>
                 <a
                   href="https://www.instagram.com/steadyhandtea/"
@@ -60,7 +55,7 @@ const Instagram = () => (
                   target="_blank"
                 >
                   <Image
-                    fluid={item.node.localImage.childImageSharp.fluid}
+                    fluid={item.node.localFile.childImageSharp.fluid}
                     key={i}
                     style={{ borderRadius: '5px' }}
                   />

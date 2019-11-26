@@ -30,19 +30,21 @@ module.exports = {
     },
     { resolve: 'gatsby-plugin-styled-components' },
     {
-      resolve: 'gatsby-source-instagram-all',
-      options: {
-        access_token: '2106430508.b82821b.83d3f9fc2ec341ac8d3b0e45c24e151f'
-      }
-    },
-    {
       resolve: 'gatsby-plugin-sharp',
       options: {
         useMozJpeg: false,
         stripMetadata: true,
-        defaultQuality: 75,
-      },
+        defaultQuality: 75
+      }
     },
-    'gatsby-transformer-sharp'
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: 'steadyhandtea'
+      }
+    }
   ]
 };
+
+
