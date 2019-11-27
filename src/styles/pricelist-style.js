@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import { Wrapper } from '../styles/landing-style';
+import { Card } from '../components/Helpers';
 
 const PricelistContainer = styled(Wrapper)`
+  width: unset;
+  grid-template-columns: unset;
   @media (min-width: 900px) {
     grid-template-rows: auto;
     background-size: contain;
@@ -14,10 +17,23 @@ const PricelistWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   background-color: white;
   justify-self: center;
-  width: 85%;
-  padding: 1em;
+  width: 80vw;
+  /* padding: 1em; */
   box-shadow: 0 5px 15px rgba(50, 50, 93, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  padding: 0;
+`;
+
+const PricelistCard = styled.div`
+  display: grid;
+  grid-column: 1 / -1;
+  width: 100vw;
+  justify-content: center;
+  padding: 0px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.7) ;
+  background: hsla(23, 10%, 39%, 0.7);
+  border-radius: 4px;
+  text-align: center;
 `;
 
 const TableBodyWrapper = styled.tbody`
@@ -50,4 +66,4 @@ const TableCell = styled.td`
   align-content: center;
 `;
 
-export { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell };
+export { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell, PricelistCard };

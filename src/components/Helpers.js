@@ -121,6 +121,47 @@ const CTAButton = styled.a`
     }
   }
 `;
+const InternalCTAButton = styled(Link)`
+  justify-self: center;
+  align-self: flex-end;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  background: linear-gradient(to left, hsla(348, 86%, 59%, .8), hsla(39, 100%, 63%, 0.8));
+  border: none;
+  border-radius: 7px;
+  border-bottom: 3px solid hsla(348, 2%, 10%, .5);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+  transition: .3s ease;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to left, hsla(348, 96%, 69%, .8), hsla(39, 100%, 63%, 0.8));
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  }
+  &:active {
+    background: linear-gradient(to left, hsla(348, 86%, 49%, .8), hsla(39, 90%, 43%, 0.8));
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+    border-bottom: none;
+    box-shadow: none;
+  }
+
+  @media(max-width: 900px) {
+    /* margin: 0; */
+    /* font-size: 16px; */
+    &:hover {
+      background: linear-gradient(to left, hsla(348, 86%, 59%, .8), hsla(39, 100%, 63%, 0.8));
+      box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+    }
+  }
+`;
 
 const PrimaryButton = styled(Link)`
   display: grid;
@@ -208,7 +249,7 @@ const SVGArrowRight = () => (
 );
 
 const RetailButton = () => (
-  <CTAButton to='/pricelist' className="arrow">
+  <InternalCTAButton to='/pricelist' className="arrow">
     <CTAButtonText>PRICE LIST</CTAButtonText>
     <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
@@ -216,7 +257,7 @@ const RetailButton = () => (
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
       </g>
     </svg>
-  </CTAButton>
+  </InternalCTAButton>
 );
 
 const ContactButton = () => (

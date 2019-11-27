@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, Title, PrimaryButton, Image, ImageWrapper } from '../components/Helpers';
-import { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell } from '../styles/pricelist-style';
+import { Title, PrimaryButton, Image, ImageWrapper } from '../components/Helpers';
+import { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell, PricelistCard } from '../styles/pricelist-style';
 
 // TODO: create responsive version and conditional rendering of labels.
 // Stylize better
@@ -8,27 +8,21 @@ import { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, Categ
 function Pricelist() {
   return (
     <PricelistContainer>
-      <Card
-        style={{
-          gridColumn: '1 / -1',
-          width: '100vw',
-          justifyContent: 'center'
-        }}
-      >
+      <PricelistCard>
         <Title style={{marginBottom: '.5em'}}>Steady Hand Tea</Title>
         <PricelistWrapper>
           <table style={{display: 'grid', gridColumn: '1 / -1'}}>
             <TableBodyWrapper>
               <TableRow>
-                <td >Tea</td>
+                <td >*Tea</td>
                 <td>
-                    Price per 25gr.
+                    *Price per 25gr.
                 </td>
                 <td>
-                    Price per Gram
+                    *Price per Gram
                 </td>
                 <td>
-                    Availability
+                    *Availability
                 </td>
               </TableRow>
               <TableRow>
@@ -279,7 +273,7 @@ function Pricelist() {
           </table>
         </PricelistWrapper>
         <PrimaryButton to='/'>HOME</PrimaryButton>
-      </Card>
+      </PricelistCard>
     </PricelistContainer>
   );
 }
