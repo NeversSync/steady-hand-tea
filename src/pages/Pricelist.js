@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../components/layout';
 import { Title, PrimaryButton, Image, ImageWrapper } from '../components/Helpers';
 import { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell, PricelistCard } from '../styles/pricelist-style';
 
