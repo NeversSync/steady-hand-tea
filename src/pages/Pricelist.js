@@ -1,11 +1,9 @@
 import React from 'react';
-import { Wrapper } from '../styles/landing-style';
 import { Card, Title, PrimaryButton, Image, ImageWrapper } from '../components/Helpers';
 import { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell } from '../styles/pricelist-style';
 
 // TODO: create responsive version and conditional rendering of labels.
 // Stylize better
-
 
 function Pricelist() {
   return (
@@ -239,8 +237,8 @@ function Pricelist() {
               </TableRow>
               <TableRow>
                 <TableCell>
-                  1995 Paperless Sheng Pu'er bing - Hong Kong storage until
-                  moved to Taiwan in early 2000’s
+                  1995 Paperless Sheng Pu'er cake - Hong Kong storage until
+                  moved to Taiwan in early 2000’s - 357g.
                 </TableCell>
                 <TableCell >
                     Full ($180) or half ($90)

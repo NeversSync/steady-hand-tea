@@ -86,7 +86,7 @@ const SubmitButton = styled.button`
   grid-row: 3 / 4;
   margin: 0;
   font-size: 16px;
-  width: 55%;
+  width: 10em;
   height: 55px;
   justify-self: center;
   align-items: center;

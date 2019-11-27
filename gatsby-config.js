@@ -43,6 +43,12 @@ module.exports = {
       options: {
         username: 'steadyhandtea'
       }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://steadyhandtea.us4.list-manage.com/subscribe/post?u=5f5d3e540a5ec960f26e98baf&amp;id=0033db0253'
+      }
     }
   ]
 };

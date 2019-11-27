@@ -41,7 +41,7 @@ const Instagram = () => (
           >
             <FaInstagram />
           </IgSocialIcon>
-          <Title style={{ textAlign: 'center', color: 'black' }}>
+          <Title style={{ textAlign: 'center', color: 'hsla(187, 5%, 23%, 1)'}}>
             Steady Hand Tea on Instagram
           </Title>
         </InstaTitleWrapper>
