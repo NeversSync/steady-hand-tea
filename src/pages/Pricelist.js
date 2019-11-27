@@ -5,7 +5,7 @@ import { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, Categ
 // TODO: create responsive version and conditional rendering of labels.
 // Stylize better
 
-function Pricelist() {
+function pricelist() {
   return (
     <PricelistContainer>
       <PricelistCard>
@@ -240,4 +240,4 @@ function Pricelist() {
   );
 }
 
-export default Pricelist;
+export default pricelist;
