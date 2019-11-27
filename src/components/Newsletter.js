@@ -7,51 +7,31 @@ import {
   NewsletterTitle,
   EmailInput
 } from '../styles/newsletter-styles';
-
-// var form = document.getElementById('newsletter');
-
-// form.addEventListener('submit', function(e) {
-//   e.preventDefault();
-//   const email = document.getElementById('inputEmail').value;
-//   submitEmail(email);
-// });
-
-// function submitEmail(email) {
-//   fetch('/.netlify/functions/form-handler', {
-//     method: 'post',
-//     body: JSON.stringify({
-//       email: email
-//     })
-//   })
-//     .then(function(response) {
-//       return response.json();
-//     })
-//     .then(function(data) {
-//       const messageDiv = document.getElementById('message');
-//       messageDiv.innerText = 'Confirmation email has been sent!';
-//     });
-// }
-
 class Newsletter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: ''
-    };
+  state = {
+    email: null,
+    success: null,
+    error: null
+  };
 
-    this._handleSubmit = this._handleSubmit.bind(this);
-  }
+  _handleChange = e => {
+    this.setState({
+      [`${e.target.name}`]: e.target.value
+    });
+  };
 
   _handleSubmit = e => {
     e.preventDefault();
-    addToMailchimp(e.email)
-      .then(data => {
-        console.log(data);
-        this.setState({email: data});
-        // I recommend setting data to React state
-        // but you can do whatever you want (including ignoring this `then()` altogether)
+    addToMailchimp(this.state.email)
+      .then(({ msg, result }) => {
+        if (result !== 'success') {
+          throw msg;
+        }
+        this.setState({success: msg});
       })
-      .catch(() => {});
+      .catch(err => {
+        this.setState({error: err});
+      });
   };
 
   render() {
@@ -62,6 +42,31 @@ class Newsletter extends Component {
           more
         </NewsletterTitle>
         <NewsletterForm
+          id='newsletter'
+          method='POST'
+          name='steady-hand-newsletter-form'
+          onSubmit={this._handleSubmit}
+        >
+          <EmailInput
+            type='email'
+            name='email'
+            onChange={this._handleChange}
+            placeholder='email'
+          ></EmailInput>
+          {this.state.error ? <p style={{fontSize: '.8em', color: 'red'}}>{this.state.error}</p> : null}
+          <SubmitButton type='submit' name='subscribe'>
+            SUBSCRIBE
+          </SubmitButton>
+          {this.state.success ? <p style={{fontSize: '.8em', color: 'green'}}>{this.state.success}</p> : null}
+        </NewsletterForm>
+      </NewsletterWrapper>
+    );
+  }
+}
+
+export default Newsletter;
+{
+  /* <NewsletterForm
           id='newsletter'
           netlify='true'
           data-netlify='true'
@@ -83,11 +88,5 @@ class Newsletter extends Component {
           <div data-netlify-recaptcha='true' />
           <SubmitButton type='submit' value='submit'>
             SUBSCRIBE
-          </SubmitButton>
-        </NewsletterForm>
-      </NewsletterWrapper>
-    );
-  }
+          </SubmitButton> */
 }
-
-export default Newsletter;
