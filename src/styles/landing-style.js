@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Card } from '../components/Helpers';
 
 const Wrapper = styled.div`
   display: grid;
@@ -20,13 +21,37 @@ const Background = styled.div`
   grid-template-columns: 100%;
   justify-items: center;
   align-items: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 5vh 0;
 
   @media (min-width: 900px) {
-    grid-template-rows: 100vh;
-    padding-top: 0vh;
-    padding-bottom: 0vh;
+    /* grid-template-rows: 100vh; */
+    padding: 0;
+    /* margin: 10em; */
+  }
+`;
+
+const LandingCard = styled(Card)`
+  justify-self: center;
+  align-self: center;
+  padding: 0 1em;
+
+  @media(min-width: 900px) {
+    padding: 0;
+  }
+`;
+
+const CTACard = styled.div`
+  display: grid;
+  grid-template-columns:auto;
+  justify-content: space-around;
+  justify-items: center;
+  grid-gap: 1em;
+  margin: 1em;
+
+  @media(min-width:1000px) {
+    margin: 1.5em 1em;
+    grid-gap: 0;
+    grid-template-columns: auto auto;
   }
 `;
 
@@ -80,4 +105,4 @@ const LandingSocialIcon = styled.a`
   font-size: 2em;
 `;
 
-export { Background, Wrapper, SocialWrapper, Social, SocialTwo, LandingSocialIcon };
+export { Background, Wrapper, LandingCard, SocialWrapper, Social, SocialTwo, LandingSocialIcon, CTACard };

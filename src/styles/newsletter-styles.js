@@ -1,46 +1,54 @@
 import styled from 'styled-components';
-import { Wrapper, SubTitle, Card } from '../components/Helpers';
+import { Wrapper, SubTitle } from '../components/Helpers';
 
 const NewsletterWrapper = styled(Wrapper)`
-  background: white;
-  grid-template-columns: 2vw auto 2vw;
+  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto/v1563169135/steady-hand-tea/red-leaves.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
   justify-items: center;
   justify-content: center;
-  grid-gap: 1em;
-  padding: 8vh 0;
+  padding: 0;
+`;
 
-  @media (min-width: 1200px) {
-  }
+const NewsletterOverlay = styled.div`
+  padding: 10vh 0;
+  display: grid;
+  grid-column: 1 / -1;
+  width: 100vw;
+  grid-template-columns: 2vw auto 2vw;
+  /* background: linear-gradient(to bottom,rgba(70,70,70,0), rgb(255,255,255)); */
+  grid-gap: 1em;
+  background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255));
 `;
 
 const NewsletterTitle = styled(SubTitle)`
   grid-column: 2 / 3;
-  font-size: 1.5em;
-  color: hsla(187, 5%, 33%, 1);
+  font-size: 1em;
+  color: white;
+  /* color: hsla(187, 5%, 28%, 1); */
   font-weight: 500;
-  /* justify-self: center; */
+  justify-self: center;
   text-align: center;
-  /* margin: 0; */
-  /* width: fit-content; */
+  text-shadow: 0px 2px 4px rgba(0,0,0, 0.4);
 
   @media (min-width: 1200px) {
-    font-size: 1em;
+    font-size: 1.2em;
     width: 40vw;
-    /* margin-bottom: 1em; */
   }
 `;
 
 const NewsletterForm = styled.form`
   display: grid;
-  background-color: white;
   justify-self: center;
+  grid-column: 2 / 3;
+  grid-gap: 0.5em;
+  width: fit-content;
+  text-align: center;
 
   @media (min-width: 1200px) {
-    grid-column: 2 / 3;
-    /* justify-content: center; */
     grid-gap: 0.75em;
     width: 350px;
-    text-align: center;
   }
 `;
 
@@ -56,11 +64,6 @@ const EmailInput = styled.input`
   &:focus {
     box-shadow: 0px 0px 2px hsla(276, 70%, 59%, 0.8);
   }
-
-  @media (max-width: 900px) {
-    /* grid-row: 1 / 2; */
-    /* grid-column: 1 / -1; */
-  }
 `;
 
 const SubmitButton = styled.button`
@@ -69,7 +72,7 @@ const SubmitButton = styled.button`
   grid-row: 3 / 4;
   margin: 0;
   font-size: 16px;
-  width: 10em;
+  width: 60vw;
   height: 55px;
   justify-self: center;
   align-items: center;
@@ -101,6 +104,7 @@ const SubmitButton = styled.button`
 
   @media (min-width: 900px) {
     font-size: 20px;
+    width: 10em;
     &:hover {
       background: linear-gradient(
         hsla(187, 65%, 58%, 1),
@@ -116,5 +120,6 @@ export {
   NewsletterForm,
   SubmitButton,
   NewsletterTitle,
-  EmailInput
+  EmailInput,
+  NewsletterOverlay
 };

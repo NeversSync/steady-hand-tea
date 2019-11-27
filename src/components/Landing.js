@@ -5,15 +5,11 @@ import {
   Social,
   SocialWrapper,
   SocialTwo,
-  LandingSocialIcon
+  LandingSocialIcon,
+  LandingCard,
+  CTACard
 } from '../styles/landing-style';
-import {
-  Card,
-  Title,
-  SubTitle,
-  RetailButton,
-  ContactButton
-} from './Helpers';
+import { Title, SubTitle, RetailButton, ContactButton } from './Helpers';
 import { FaInstagram } from 'react-icons/fa';
 import { TiSocialFacebookCircular } from 'react-icons/ti';
 
@@ -22,32 +18,39 @@ function Landing() {
   return (
     <Wrapper>
       <Background>
-        <Card>
+        <LandingCard>
           <Title>Steady Hand Tea</Title>
           <SubTitle>
-            Lending a steady hand through tea and tea culture.
+            Lending a steady hand through tea and tea culture
             <br />
             <br />
-            Tea related posts, photos, articles, and events. <br />
-            Artisan tea wholesale and distribution. <br />
-            <br />
-            Interested in wholesaling or retailing tea from us?
-            <br />
-            <RetailButton/>
-            For wholesale inquiries and more information
-            <ContactButton/>
-            <br />
-            <br />
-            Regular tea arts classes and events in Portland.
-            <br />
-            <a className='link' href='https://www.airbnb.com/experiences/966234' target='_blank'>Book an AirBnb Experience with us</a>
-            <br />
-            <br />
-            Connect on social media below to see what's brewing.
-            <br />
-            <br />
-
+            Quality tea content<br/><br/>
+            Education, photography, and events<br />
+            Artisan tea sales, retail and wholesale<br />
           </SubTitle>
+          <CTACard>
+            <SubTitle>
+              Interested in buying<br/>tea from us?
+              <RetailButton />
+            </SubTitle>
+            <SubTitle>
+              For wholesale and<br/>other inquiries
+              <ContactButton />
+            </SubTitle>
+          </CTACard>
+          <SubTitle>Regular tea arts classes and events in Portland.</SubTitle>
+          <a
+            className='link'
+            href='https://www.airbnb.com/experiences/966234'
+            target='_blank'
+          >
+            Book an AirBnb Experience with us
+          </a><br/>
+          <SubTitle>
+            Connect on social media below<br/> to see what's brewing, and<br/>
+          </SubTitle>
+          <a className='link' href="#newsletter">Subscribe to our newsletter</a>
+          <SubTitle>to stay in touch</SubTitle>
           <SocialWrapper>
             <Social>
               <LandingSocialIcon
@@ -72,7 +75,7 @@ function Landing() {
               </LandingSocialIcon>
             </SocialTwo>
           </SocialWrapper>
-        </Card>
+        </LandingCard>
       </Background>
     </Wrapper>
   );

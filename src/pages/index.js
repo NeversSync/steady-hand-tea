@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import Landing from '../components/Landing';
 import Newsletter from '../components/Newsletter';
-// import Instagram from '../components/Instagram';
+import Instagram from '../components/Instagram';
 import Contact from '../components/Contact';
 
 if (typeof window !== 'undefined') {
@@ -14,7 +14,7 @@ const IndexPage = () => (
   <Layout>
     <Landing/>
     <Newsletter/>
-    {/* <Instagram/> */}
+    <Instagram/>
     <Contact/>
   </Layout>
 );

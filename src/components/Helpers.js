@@ -54,25 +54,25 @@ const Title = styled.h1`
   display: grid;
   justify-self: center;
   margin: .5em;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   font-size: 2em;
   letter-spacing: 3px;
   color: white;
 
   @media (min-width: 1100px) {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 `;
 
 const SubTitle = styled.h3`
-  font-size: .8em;
+  font-size: .7em;
   letter-spacing: 4px;
   color: white;
   font-weight: 300;
   line-height: 1.2em;
 
   @media (min-width: 1100px) {
-    font-size: .9em;
+    font-size: .8em;
   }
 `;
 
@@ -82,7 +82,9 @@ const CTAButtonText = styled.p`
 
 const CTAButton = styled.a`
   justify-self: center;
+  align-self: flex-end;
   font-size: 16px;
+  margin: 0 auto;
   margin-top: 1em;
   display: flex;
   justify-content: space-evenly;
@@ -233,8 +235,8 @@ const UpArrow = () => (
   <a href="#" className='arrow up-button'>
     <svg className='up-arrow' style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#000" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="black" stroke="black" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+        <path id="arrow-head" fill="none" stroke="hsla(187, 5%, 33%, 1)" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="arrow-body" fill="hsla(187, 5%, 33%, 1)" stroke="hsla(187, 5%, 33%, 1)" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
       </g>
     </svg>
   </a>
