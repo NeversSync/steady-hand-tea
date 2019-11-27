@@ -128,32 +128,6 @@ function Pricelist() {
                 <TableCell >To order</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell >
-                  Orchid' Baozhong Cert. organic wulong, Pinglin, Northern
-                  Taiwan, 800m, Yu Banzhang - Spring 2018
-                </TableCell>
-                <TableCell >
-                  $12
-                </TableCell>
-                <TableCell>
-                  0.48
-                </TableCell>
-                <TableCell >To order</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell >
-                  Traditional Qing Xin Wulong, Mei Shan high Mtn. Nantou county,
-                  1200m, Chen Huang Tang - Winter 2018
-                </TableCell>
-                <TableCell >
-                  $17
-                </TableCell>
-                <TableCell >
-                  0.7
-                </TableCell>
-                <TableCell >To order</TableCell>
-              </TableRow>
-              <TableRow>
                 <TableCell  />
                 <TableCell  />
                 <TableCell  />
@@ -198,18 +172,6 @@ function Pricelist() {
                 </TableCell>
                 <TableCell>
                   0.33
-                </TableCell>
-                <TableCell >To order</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell >
-                  Qing Xin red tea, Puli, Nantou, 1100m, Mr. Hong - Summer 2018
-                </TableCell>
-                <TableCell >
-                  $9
-                </TableCell>
-                <TableCell >
-                  0.37
                 </TableCell>
                 <TableCell >To order</TableCell>
               </TableRow>
