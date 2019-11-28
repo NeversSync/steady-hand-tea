@@ -249,7 +249,7 @@ const SVGArrowRight = () => (
 );
 
 const RetailButton = () => (
-  <InternalCTAButton to='/pricelist/' className="arrow">
+  <InternalCTAButton to='/price-list/' className="arrow">
     <CTAButtonText>PRICE LIST</CTAButtonText>
     <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
