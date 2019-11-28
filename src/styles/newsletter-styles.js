@@ -9,6 +9,10 @@ const NewsletterWrapper = styled(Wrapper)`
   justify-items: center;
   justify-content: center;
   padding: 0;
+
+  @media(min-width: 900px) {
+    background-size: cover;
+  }
 `;
 
 const NewsletterOverlay = styled.div`
