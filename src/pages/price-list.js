@@ -15,7 +15,7 @@ import {
 } from '../styles/pricelist-style';
 
 // TODO: create responsive version and conditional rendering of labels.
-// Stylize better ssss
+// Stylize better
 
 function pricelist() {
   return (
