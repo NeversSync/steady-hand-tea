@@ -4,12 +4,14 @@ import { Card } from '../components/Helpers';
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 100vw;
-  background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1559350545/steady-hand-tea/IMG_7239.jpg');
-  background-size: contain;
-  background-repeat: repeat-y;
+  background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto/v1575085782/steady-hand-tea/dragon-steam-comp.jpg');
+  /* background-size: contain; */
+  background-size: cover;
+  /* background-repeat: repeat-y; */
   background-position: center center;
 
   @media (min-width: 900px) {
+    background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1559350545/steady-hand-tea/IMG_7239.jpg');
     grid-template-rows: 100vh;
     background-size: cover;
   }
