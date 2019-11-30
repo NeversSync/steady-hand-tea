@@ -25,7 +25,16 @@ const NewsletterOverlay = styled.div`
   /* background: linear-gradient(to bottom,rgba(70,70,70,0), rgb(255,255,255)); */
   grid-gap: 1em;
   /* background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255)); */
-  background: linear-gradient(to bottom,rgba(30,30,30,1), rgb(255,255,255));
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+
+  background-attachment: fixed;
+  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto/v1575085621/steady-hand-tea/red-leaves.jpg');
+
+  @media(min-width: 900px) {
+  background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255));
+  }
 `;
 
 const NewsletterTitle = styled(SubTitle)`
