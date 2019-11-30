@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Wrapper, SubTitle } from '../components/Helpers';
 
 const NewsletterWrapper = styled(Wrapper)`
-  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto/v1575085621/steady-hand-tea/red-leaves.jpg');
+  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/s--lScOneY_--/f_auto,q_jpegmini:1/v1575086423/steady-hand-tea/TAIWAN-MISC-52_copy_2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -11,6 +11,7 @@ const NewsletterWrapper = styled(Wrapper)`
   padding: 0;
 
   @media(min-width: 900px) {
+    background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto/v1575085621/steady-hand-tea/red-leaves.jpg');
   }
 `;
 
