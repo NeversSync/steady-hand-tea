@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: white;
+  /* background: white; */
 `;
 
 const Copy = styled.p`
