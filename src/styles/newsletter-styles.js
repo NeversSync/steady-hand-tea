@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { Wrapper, SubTitle } from '../components/Helpers';
 
 const NewsletterWrapper = styled(Wrapper)`
-  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1575085619/steady-hand-tea/red-leaf-macro.jpg');
+  /* background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1575085619/steady-hand-tea/red-leaf-macro.jpg'); */
+  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/q_auto:good/v1575085621/steady-hand-tea/red-leaves.jpg');
   background-size: cover;
   background-attachment: scroll;
   background-position: bottom center;
