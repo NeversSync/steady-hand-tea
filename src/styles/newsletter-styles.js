@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Wrapper, SubTitle } from '../components/Helpers';
 
 const NewsletterWrapper = styled(Wrapper)`
-  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/s--lScOneY_--/f_auto,q_jpegmini:1/v1575086423/steady-hand-tea/TAIWAN-MISC-52_copy_2.jpg');
+  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/s--HjnDN58---/f_auto,q_jpegmini:1/v1575087205/steady-hand-tea/TAIWAN-MISC-52_copy_2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
