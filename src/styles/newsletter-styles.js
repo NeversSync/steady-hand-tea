@@ -4,7 +4,7 @@ import { Wrapper, SubTitle } from '../components/Helpers';
 const NewsletterWrapper = styled(Wrapper)`
   background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1575085619/steady-hand-tea/red-leaf-macro.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center center;
   justify-items: center;
   justify-content: center;
@@ -24,16 +24,16 @@ const NewsletterOverlay = styled.div`
   grid-template-columns: 2vw auto 2vw;
   /* background: linear-gradient(to bottom,rgba(70,70,70,0), rgb(255,255,255)); */
   grid-gap: 1em;
-  /* background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255)); */
-  background-size: cover;
+  background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255));
+  /* background-size: cover;
   background-attachment: fixed;
   background-position: center center;
 
   background-attachment: fixed;
-  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto/v1575085621/steady-hand-tea/red-leaves.jpg');
+  background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto/v1575085621/steady-hand-tea/red-leaves.jpg'); */
 
   @media(min-width: 900px) {
-  background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255));
+  /* background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255)); */
   }
 `;
 
