@@ -24,7 +24,8 @@ const NewsletterOverlay = styled.div`
   grid-template-columns: 2vw auto 2vw;
   /* background: linear-gradient(to bottom,rgba(70,70,70,0), rgb(255,255,255)); */
   grid-gap: 1em;
-  background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255));
+  /* background: linear-gradient(to bottom,rgba(30,30,30,.4), rgb(255,255,255)); */
+  background: linear-gradient(to bottom,rgba(30,30,30,1), rgb(255,255,255));
 `;
 
 const NewsletterTitle = styled(SubTitle)`
