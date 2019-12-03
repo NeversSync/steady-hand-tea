@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { Wrapper } from '../styles/landing-style';
-import { Card } from '../components/Helpers';
+import { Card, SubTitle } from '../components/Helpers';
 
 const PricelistContainer = styled(Wrapper)`
   width: unset;
   grid-template-columns: unset;
+
   @media (min-width: 900px) {
     grid-template-rows: auto;
     background-size: contain;
@@ -22,6 +23,7 @@ const PricelistWrapper = styled.div`
   box-shadow: 0 5px 15px rgba(50, 50, 93, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 0;
+  margin-bottom: 1em;
 `;
 
 const PricelistCard = styled.div`
@@ -34,10 +36,23 @@ const PricelistCard = styled.div`
   background: hsla(23, 10%, 39%, 0.7);
   border-radius: 4px;
   text-align: center;
+  padding-bottom: 1em;
+`;
+
+const PricelistSubtitle = styled(SubTitle)`
+  color: var(--dark-text);
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 1em .5em;
+
+  @media(min-width: 900px) {
+    width: 50%;
+  }
 `;
 
 const TableBodyWrapper = styled.tbody`
   display: grid;
+  color: var(--dark-text);
   `;
 
 const TableRow = styled.tr`
@@ -59,11 +74,9 @@ const CategoryTitle = styled.h3`
 `;
 
 const TableCell = styled.td`
-  /* margin: .25em; */
   padding: .5em;
-  /* box-shadow: 1px 1px 5px grey; */
   display: grid;
   align-content: center;
 `;
 
-export { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell, PricelistCard };
+export { PricelistContainer, PricelistWrapper, TableBodyWrapper, TableRow, CategoryTitle, TableCell, PricelistCard, PricelistSubtitle };

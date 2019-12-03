@@ -1,8 +1,10 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Link from 'gatsby-link';
 import {
   Title,
   PrimaryButton,
+  SubTitle
 } from '../components/Helpers';
 import {
   PricelistContainer,
@@ -11,11 +13,9 @@ import {
   TableRow,
   CategoryTitle,
   TableCell,
-  PricelistCard
+  PricelistCard,
+  PricelistSubtitle
 } from '../styles/pricelist-style';
-
-// TODO: create responsive version and conditional rendering of labels.
-// Stylize better
 
 function pricelist() {
   return (
@@ -24,6 +24,9 @@ function pricelist() {
         <PricelistCard>
           <Title style={{ marginBottom: '.5em' }}>Steady Hand Tea</Title>
           <PricelistWrapper>
+        <PricelistSubtitle>
+          To purchase tea, please use our <Link className='link' to='/#contact'>Contact Form</Link> to submit your order and we will follow up with an invoice by email
+        </PricelistSubtitle>
             <table style={{ display: 'grid', gridColumn: '1 / -1' }}>
               <TableBodyWrapper>
                 <TableRow>
@@ -159,7 +162,7 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    1990 loose sheng Hong Kong stored until 2013
+                    1990 Loose Sheng Pu'er Hong Kong stored until 2013
                   </TableCell>
                   <TableCell>$22.75</TableCell>
                   <TableCell>0.91</TableCell>

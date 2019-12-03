@@ -36,7 +36,6 @@ const NewsletterTitle = styled(SubTitle)`
   grid-column: 2 / 3;
   font-size: 1em;
   color: white;
-  /* color: hsla(187, 5%, 28%, 1); */
   font-weight: 500;
   justify-self: center;
   text-align: center;

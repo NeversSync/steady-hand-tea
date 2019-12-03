@@ -57,7 +57,7 @@ function Landing() {
                 href='https://www.instagram.com/steadyhandtea/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='link'
+                className='link icon'
                 style={{ width: 'fit-content' }}
               >
                 <FaInstagram />
@@ -68,7 +68,7 @@ function Landing() {
                 href='https://www.facebook.com/steadyhandtea/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='link'
+                className='link icon'
                 style={{ width: 'fit-content', fontSize: '2.3em' }}
               >
                 <TiSocialFacebookCircular />

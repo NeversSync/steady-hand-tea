@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import 'reset-css';
 import '../styles/boss.css';
+import '../styles/index.css'
 import styled from 'styled-components';
 import 'typeface-stylish';
 

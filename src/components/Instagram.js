@@ -36,8 +36,8 @@ const Instagram = () => (
             href="https://www.instagram.com/steadyhandtea/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link"
-            style={{ width: 'fit-content' }}
+            className='link'
+            style={{ width: 'fit-content', color: 'hsla(187, 5%, 23%, 1)' }}
           >
             <FaInstagram />
           </IgSocialIcon>

@@ -67,7 +67,6 @@ const IgSocialIcon = styled.a`
   justify-content: center;
   align-items: center;
   padding: 0px 10px;
-  color: hsla(187, 5%, 23%, 1);
   font-size: 2em;
 `;
 
