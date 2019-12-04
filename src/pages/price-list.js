@@ -104,6 +104,15 @@ function pricelist() {
                   <TableCell>To order</TableCell>
                 </TableRow>
                 <TableRow>
+                  <TableCell>
+                  GABA 'sleepytime' tea, charcoal roast, Shiding, Northern Taiwan,
+                  800m, Mr. Zhan - Spring 2019
+                  </TableCell>
+                  <TableCell>$14</TableCell>
+                  <TableCell>0.57</TableCell>
+                  <TableCell>aprx. 500gr.</TableCell>
+                </TableRow>
+                <TableRow>
                   <TableCell />
                   <TableCell />
                   <TableCell />
@@ -114,16 +123,16 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Lugu Rolled Jin Xuan red tea , DongdingShan, Lugu, Nantou
+                    Lugu Rolled Jin Xuan Red tea , DongdingShan, Lugu, Nantou
                     county, 700m, Mr. Su Xu Tie - Sping/Autumn blend 2018
                   </TableCell>
                   <TableCell>$2.20</TableCell>
                   <TableCell>0.08</TableCell>
-                  <TableCell>Aprx. 500gr</TableCell>
+                  <TableCell>To order</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    TRES Ruby #18 'Hong Yun' red tea, Sun Moon Lake, 900m -
+                    TRES Ruby #18 'Hong Yu' Red tea, Sun Moon Lake, 900m -
                     Summer 2018
                   </TableCell>
                   <TableCell>$7</TableCell>
@@ -133,19 +142,10 @@ function pricelist() {
                 <TableRow>
                   <TableCell>
                     80 year old bush Assamica varietal Sun Moon Lake Ecological
-                    red tea, 900m - Summer 2018
+                    Red tea, 900m - Summer 2018
                   </TableCell>
                   <TableCell>$8</TableCell>
                   <TableCell>0.33</TableCell>
-                  <TableCell>To order</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    GABA Cert. organic 'sleepytime' tea, Jin Xuan cultivar,
-                    Pinglin, Northern Taiwan, 800m, Yu Banzhang - Spring 2016
-                  </TableCell>
-                  <TableCell>$13</TableCell>
-                  <TableCell>0.55</TableCell>
                   <TableCell>To order</TableCell>
                 </TableRow>
                 <TableRow>
