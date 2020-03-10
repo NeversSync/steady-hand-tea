@@ -22,6 +22,7 @@ const Contact = () => (
         method='POST'
         data-netlify-honeypot='bot-field'
         name='steady-hand-contact-form'
+        data-netlify-recaptcha="true"
       >
         <LeftHalfInputs>
           <LeftInput name='name' type='text' placeholder='Name' />
