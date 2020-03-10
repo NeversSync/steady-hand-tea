@@ -75,28 +75,3 @@ class Newsletter extends Component {
 }
 
 export default Newsletter;
-{
-  /* <NewsletterForm
-          id='newsletter'
-          netlify='true'
-          data-netlify='true'
-          method='POST'
-          data-netlify-honeypot='bot-field'
-          name='steady-hand-newsletter-form'
-          onSubmit={e => this._handleSubmit(e)}
-        >
-          <EmailInput
-            name='email'
-            type='email'
-            placeholder='Email address'
-          ></EmailInput>
-          <input
-            type='hidden'
-            name='form-name'
-            value='steady-hand-newsletter-form'
-          />
-          <div data-netlify-recaptcha='true' />
-          <SubmitButton type='submit' value='submit'>
-            SUBSCRIBE
-          </SubmitButton> */
-}
