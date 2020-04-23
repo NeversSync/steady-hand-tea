@@ -168,7 +168,7 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    2013 Bulang Shan Shou Pu'er<br/>He Kai village<br/>357 gr.
+                    2013 Bulang Shan Shou Pu'er<br/>He Kai village<br/>357 g.
                   </TableCell>
                   <TableCell>$100/cake</TableCell>
                   <TableCell>0.27</TableCell>
