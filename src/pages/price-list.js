@@ -40,8 +40,8 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Charcoal roast Dong Ding organic wulong<br/>DongdingShan, Lugu,
-                    Nantou county, 700m<br/>Mr. Su Xu Tie - Winter 2018
+                    Charcoal roast Dong Ding organic wulong, DongdingShan, Lugu,
+                    Nantou county, 700m, Mr. Su Xu Tie - Winter 2018
                   </TableCell>
                   <TableCell>$5</TableCell>
                   <TableCell>0.2</TableCell>
@@ -49,8 +49,8 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Dark charcoal roast cert. organic wulong<br/>Zhu Shan, Nantou
-                    county, 500m<br/>David Tsay - Winter 2018
+                    Dark charcoal roast cert. organic wulong, Zhu Shan, Nantou
+                    county, 500m, David Tsay - Winter 2018
                   </TableCell>
                   <TableCell>$7</TableCell>
                   <TableCell>0.27</TableCell>
@@ -58,8 +58,8 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    MingQuan (twittering spring) 2X charcoal roast Dong Ding<br/>
-                    DongdingShan, Lugu, Nantou county, 700m<br/>Master Zhan -
+                    MingQuan (twittering spring) 2X charcoal roast Dong Ding,
+                    DongdingShan, Lugu, Nantou county, 700m, Master Zhan -
                     Winter 2018
                   </TableCell>
                   <TableCell>$10</TableCell>
@@ -69,7 +69,7 @@ function pricelist() {
                 <TableRow>
                   <TableCell>
                     MingQuan (twittering spring) 4X dark charcoal roast Dong
-                    Ding<br/>DongdingShan, Lugu, Nantou county, 700m<br/>Master Zhan -
+                    Ding, DongdingShan, Lugu, Nantou county, 700m, Master Zhan -
                     Winter 2018
                   </TableCell>
                   <TableCell>$12</TableCell>
@@ -79,7 +79,7 @@ function pricelist() {
                 <TableRow>
                   <TableCell>
                     Qi Lan Xiang 'Rare Orchid Fragrance' high charcoal roast
-                    YanCha 'cliff tea'<br/>Wuyishan, Fujian, China<br/>Spring 2017
+                    YanCha 'cliff tea', Wuyishan, Fujian, China - Spring 2017
                   </TableCell>
                   <TableCell>$7</TableCell>
                   <TableCell>0.27</TableCell>
@@ -87,8 +87,8 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Mi Lan Xiang 'Honey Orchid Frangrance' Dancong<br/>Chaozhou,
-                    Guangdong, China<br/>Spring 18
+                    Mi Lan Xiang 'Honey Orchid Frangrance' Dancong, Chaozhou,
+                    Guangdong, China - Spring 18
                   </TableCell>
                   <TableCell>$18</TableCell>
                   <TableCell>0.72</TableCell>
@@ -96,8 +96,17 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                  GABA 'sleepytime' tea, charcoal roast<br/>Shiding, Northern Taiwan,
-                  800m<br/>Mr. Zhan - Spring 2019
+                    Old Style Li Shan high mountain Qing Xin cultivar Wulong,
+                    1800m, Chen Huang Tang - Spring 2018
+                  </TableCell>
+                  <TableCell>$25</TableCell>
+                  <TableCell>$1</TableCell>
+                  <TableCell>To order</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                  GABA 'sleepytime' tea, charcoal roast, Shiding, Northern Taiwan,
+                  800m, Mr. Zhan - Spring 2019
                   </TableCell>
                   <TableCell>$14</TableCell>
                   <TableCell>0.57</TableCell>
@@ -114,8 +123,8 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Lugu Rolled Jin Xuan Red tea<br/>DongdingShan, Lugu, Nantou
-                    county, 700m<br/>Mr. Su Xu Tie - Sping/Autumn blend 2018
+                    Lugu Rolled Jin Xuan Red tea , DongdingShan, Lugu, Nantou
+                    county, 700m, Mr. Su Xu Tie - Sping/Autumn blend 2018
                   </TableCell>
                   <TableCell>$2.20</TableCell>
                   <TableCell>0.08</TableCell>
@@ -123,7 +132,8 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    TRES Ruby #18 'Hong Yu' Red tea<br/>Sun Moon Lake, Taiwan, 900m<br/>Summer 2018
+                    TRES Ruby #18 'Hong Yu' Red tea, Sun Moon Lake, 900m -
+                    Summer 2018
                   </TableCell>
                   <TableCell>$7</TableCell>
                   <TableCell>0.28</TableCell>
@@ -131,28 +141,20 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    80 year old bush Assamica varietal ecological
-                    Red tea<br/>Sun Moon Lake, Taiwan, 900m<br/>Summer 2018
+                    80 year old bush Assamica varietal Sun Moon Lake Ecological
+                    Red tea, 900m - Summer 2018
                   </TableCell>
                   <TableCell>$8</TableCell>
                   <TableCell>0.33</TableCell>
                   <TableCell>To order</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>
-                    Wild Purple Var. old growth cake<br/>Gao Li Gong Mtns. NW Yunnan<br/>Spring 2018 - 200g.
-                  </TableCell>
-                  <TableCell>$13.75, $110/cake</TableCell>
-                  <TableCell>0.55</TableCell>
-                  <TableCell>8 cakes</TableCell>
-                </TableRow>
-                <TableRow>
                   <CategoryTitle>Pu'er</CategoryTitle>
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    1995 Paperless Sheng Pu'er cake<br/>Hong Kong storage until
-                    moved to Taiwan in early 2000’s<br/>357g.
+                    1995 Paperless Sheng Pu'er cake - Hong Kong storage until
+                    moved to Taiwan in early 2000’s - 357g.
                   </TableCell>
                   <TableCell>Full ($180) or half ($90)</TableCell>
                   <TableCell>0.51</TableCell>
@@ -160,7 +162,7 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    1990 Loose Sheng Pu'er<br/>Hong Kong stored until 2013
+                    1990 Loose Sheng Pu'er Hong Kong stored until 2013
                   </TableCell>
                   <TableCell>$22.75</TableCell>
                   <TableCell>0.91</TableCell>
@@ -168,7 +170,8 @@ function pricelist() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    2013 Bulang Shan Shou Pu'er<br/>He Kai village<br/>357 gr.
+                    2013 Bulang Shan (Mtn) He Kai village Shou Pu'er, Spring -
+                    357 gr. cake
                   </TableCell>
                   <TableCell>$100/cake</TableCell>
                   <TableCell>0.27</TableCell>
