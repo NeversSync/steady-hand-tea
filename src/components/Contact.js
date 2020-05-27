@@ -17,10 +17,10 @@ const Contact = () => (
     <ContactTitle>Contact</ContactTitle>
     <ContactCard>
       <ContactForm
-        netlify='true'
+        // netlify='true'
         data-netlify='true'
         method='POST'
-        data-netlify-honeypot='bot-field'
+        netlify-honeypot='bot-field'
         name='steady-hand-contact-form'
         data-netlify-recaptcha="true"
       >
@@ -28,7 +28,7 @@ const Contact = () => (
           <LeftInput name='name' type='text' placeholder='Name' />
           <LeftInput name='email' type='email' placeholder='Email address' />
           <LeftInput name='subject' type='text' placeholder='Subject' />
-          <input type='hidden' name='form-name' value='steady-hand-contact-form' />
+          <input type='hidden' name='bot-field' />
         </LeftHalfInputs>
         <RightHalfInputs>
           <RightTextArea name='message' type='text' placeholder='Message' />
