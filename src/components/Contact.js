@@ -38,6 +38,7 @@ const Contact = () => (
     </ContactCard>
     <UpArrow />
   </ContactWrapper>
+  // test comment
 );
 
 export default Contact;
