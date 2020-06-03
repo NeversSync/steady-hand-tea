@@ -21,7 +21,6 @@ const Contact = () => (
         method='POST'
         netlify-honeypot='bot-field'
         name='steady-hand-contact-form'
-        // data-netlify-recaptcha="true" test
       >
         <LeftHalfInputs>
           <LeftInput name='name' type='text' placeholder='Name' />
@@ -32,7 +31,6 @@ const Contact = () => (
         <RightHalfInputs>
           <RightTextArea name='message' type='text' placeholder='Message' />
         </RightHalfInputs>
-        {/* <div data-netlify-recaptcha='true' /> */}
         <SubmitButton type='submit' value='submit'>
           SUBMIT
         </SubmitButton>
