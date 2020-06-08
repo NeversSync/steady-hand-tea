@@ -39,10 +39,10 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     {
-      resolve: 'gatsby-source-instagram',
+      resolve: `gatsby-source-instagram`,
       options: {
-        username: 'steadyhandtea'
-      }
+        username: `steadyhandtea`,
+      },
     },
     {
       resolve: 'gatsby-plugin-mailchimp',
