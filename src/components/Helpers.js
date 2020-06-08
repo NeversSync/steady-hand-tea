@@ -260,6 +260,18 @@ const RetailButton = () => (
   </InternalCTAButton>
 );
 
+const HomeButton = () => (
+  <InternalCTAButton to='/' className="arrow">
+    <CTAButtonText>HOME</CTAButtonText>
+    <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
+      <g id="Layer_2" data-name="Layer 2">
+        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+      </g>
+    </svg>
+  </InternalCTAButton>
+);
+
 const ContactButton = () => (
   <CTAButton href='#contact' className="arrow">
     <CTAButtonText>CONTACT US</CTAButtonText>
@@ -283,4 +295,4 @@ const UpArrow = () => (
   </a>
 );
 
-export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, CTAButtonText, Testimonial, SVGArrowRight, RetailButton, Image, ImageWrapper, Spacer, UpArrow, PrimaryButton, ContactButton };
+export { Wrapper, Title, SubTitle, Copy, Card, CTAButton, CTAButtonText, Testimonial, SVGArrowRight, RetailButton, Image, ImageWrapper, Spacer, UpArrow, PrimaryButton, ContactButton, HomeButton };
