@@ -42,7 +42,9 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `steadyhandtea`,
-      },
+        access_token: 'EAAkp6jFxMv4BAOgMxCx1roSjVk6iPdwe9BVgEA3dKeRcqRyX0ouHuUEpTFIvGB624jAZCXsZCiEaj2WsMVJbzU0QO2MvGINj6jKY1YUK1yO9nq8voj3CZBSILgLZCAWRUNb4KYRrZAbZAmNFHspNSSv81JfG0MZBCMTYszg6CZCnbQZDZD',
+        instagram_id: '17841402115263303',
+      }
     },
     {
       resolve: 'gatsby-plugin-mailchimp',
