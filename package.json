@@ -29,7 +29,7 @@
     "react-scrollchor": "^6.0.0",
     "reset-css": "^4.0.1",
     "serve": "^11.2.0",
-    "sharp": "^0.23.3",
+    "sharp": "^0.30.5",
     "smooth-scroll": "^16.1.0",
     "styled-components": "^4.4.1",
     "typeface-stylish": "0.0.65"
